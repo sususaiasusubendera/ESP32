@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Silkscreen&display=swap');
+
+/*Media screen*/
+@media screen and (max-width: 900px) {
+    #content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .jumbotron {
+        font-size: 5px;
+    }
+
+    #articleDropdown a {
+        font-size: 5px;
+    }
+
+    .dropdown-content {
+        max-width: fit-content;
+        min-width: fit-content;
+        width: fit-content;
+    }
+
+}
+
+/*Sizing*/
+* {
+    box-sizing: border-box;
+}
+
+/*Basic*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#intro h2,
+#artikel h2 {
+    font-family: 'Silkscreen', cursive;
+}
+
+/*Jumbotron*/
+.jumbotron {
+    font-family: 'Silkscreen', cursive;
+    padding: 20px;
+    background-color: #222831;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.me a:hover {
+    color: #FF0000;
+}
+
+.ji a:hover {
+    color: #FF7F00;
+}
+
+.ku a:hover {
+    color: #FFFF00;
+}
+
+.hi a:hover {
+    color: #00FF00;
+}
+
+.bi a:hover {
+    color: #0000FF;
+}
+
+.ni a:hover {
+    color: #4B0082;
+}
+
+.u a:hover {
+    color: #9400D3;
+}
+
+.blue a:hover {
+    color: #BDE6F1;
+}
+
+.jumbotron a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Nav*/
+nav {
+    text-align: center;
+    background-color: #393E46;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav a:hover,
+nav button:hover {
+    color: #BDE6F1;
+}
+
+nav a,
+nav button {
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 16px;
+}
+
+header {
+    display: inline;
+}
+
+/*Card*/
+.card {
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #d4ebf2;
+}
+
+/*UX link*/
+.long a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color 1.3s ease-in-out, box-shadow 0.7s ease-in-out;
+    text-decoration: none;
+}
+
+.short a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .9s ease-in-out, box-shadow .7s ease-in-out;
+    text-decoration: none;
+}
+
+.long a:hover {
+    box-shadow: inset 220px 0 0 0 #54b3d6;
+    color: white
+}
+
+.short a:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white
+}
+
+/*Profile*/
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tentang-kami {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 60% 20%;
+    border-radius: 50%;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+/*Dropdown*/
+.dropbutton {
+    background-color: #393E46;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown-content {
+    text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #222831;
+    min-width: 160px;
+    width: 315px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+#articleDropdown a {
+    font-size: 17px;
+}
+
+.show {
+    display: block;
+}
+
+/*Footer*/
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #393E46;
+    text-align: center;
+    font-weight: bold;
+}
